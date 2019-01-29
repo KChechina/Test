@@ -5,13 +5,68 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="App.css">
+
 </head>
 <body>
-<h1>Привет!</h1>
-<h1 class="title"><span>пока</span></h1>
-<p>asya is sleeping</p>
+<header class="header">
+    <div class="header__logo"><img src=http://shiplock.bz/assets/headtop.jpg alt="logo"></div>
+    <nav class="menu-wrapper">
+        <ul class="menu">
+           <li class="menu__item">ГЛАВНАЯ</li>
+           <li class="menu__item">О НАС</li>
+          <li class="menu__item">ПОДАТЬ ЗАЯВКУ</li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item">EN</li>
+           <li class="menu__item">RU</li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <h1 class="title"><span>Подать заявку</span></h1>
+    <form action="" method="post">
+        <div class="input-wrapper">
+            <input type="text" class="input" id="name" placeholder="Имя" required>
+            <input type="tel" class="input" id="phone" placeholder="Телефон" required>
+            <input type="email" class="input" id="email" placeholder="Email" required>
+            <input type="text" class="input" id="time" placeholder="Удобное время обращения">
+            <input type="text" class="input" id="transfer date" placeholder="Дата перевозки">
+            <input type="text" class="input" id="transfer type" placeholder="Вид перевозки">
+            <input type="text" class="input" id="plan" placeholder="План, номер плана">
+            <input type="text" class="input" id="type" placeholder="Вид отправки">
+            <input type="text" class="input" id="transport type" placeholder="Род подвижного состава">
+            <input type="text" class="input" id="transport" placeholder="Принадлежность подвижного состава">
+            <input type="text" class="input" id="departure point" placeholder="Страна происхождения/отправки">
+            <input type="text" class="input" id="delivery point" placeholder="Страна назначения">
+            <input type="text" class="input" id="entry station" placeholder="Станция пограничная входная">
+            <input type="text" class="input" id="exit station" placeholder="Станция пограничная выходная">
+            <input type="text" class="input" id="shipper" placeholder="Грузоотправитель">
+            <input type="text" class="input" id="reciever" placeholder="Грузополучатель">
+            <input type="text" class="input" id="cargo" placeholder="Груз">
+            <input type="text" class="input" id="cargo code" placeholder="Код груза по ГНГ, ЕТСНГ">
+            <input type="text" class="input" id="weight" placeholder="Вес, тн.">
+            <input type="text" class="input" id="transport number" placeholder="Кол-во подвижного состава">
+            <input type="text" class="input" id="payer" placeholder="Плательщик по транзитным дорогам">
+            <input type="text" class="input" id="special signs" placeholder="Особые отметки">
+        </div>
+        <br>
+        <div class="submit">
+    <input type="submit" value="ПОДАТЬ ЗАЯВКУ">
+</div>
+
+    </form>
+</div>
+<footer class="footer">
+    <div class="footer__adress">ShipLock Ltd.,
+        Address: Belize City, Belize, C.A. 35 Barrack Road</div>
+    <div class="footer__tel">+1 800 017 62 69</div>
+    <div class="footer__mail">info@shiplock.bz</div>
+</footer>
 <script src="AppJS.js"></script>
 </body>
 </html>
